@@ -12,6 +12,9 @@
 		1B4563C41C17629700046073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4563C21C17629700046073 /* Main.storyboard */; };
 		1B4563C61C17629700046073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4563C51C17629700046073 /* Assets.xcassets */; };
 		1B4563C91C17629700046073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4563C71C17629700046073 /* LaunchScreen.storyboard */; };
+		1B4563D31C1779B700046073 /* Planeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D21C1779B700046073 /* Planeta.swift */; };
+		1B4563D61C177A3100046073 /* PlanetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */; };
+		1B4563D81C1784E000046073 /* AddPlanetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D71C1784E000046073 /* AddPlanetaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1B4563C51C17629700046073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4563C81C17629700046073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4563CA1C17629700046073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4563D21C1779B700046073 /* Planeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planeta.swift; sourceTree = "<group>"; };
+		1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetaTableViewCell.swift; sourceTree = "<group>"; };
+		1B4563D71C1784E000046073 /* AddPlanetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlanetaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		1B4563BD1C17629700046073 /* Planeta */ = {
 			isa = PBXGroup;
 			children = (
+				1B4563D41C177A1400046073 /* Cells */,
+				1B4563D11C1779A400046073 /* Database */,
+				1B4563D01C17799D00046073 /* Models */,
 				1B4563BE1C17629700046073 /* AppDelegate.swift */,
 				1B4563C01C17629700046073 /* ViewController.swift */,
+				1B4563D71C1784E000046073 /* AddPlanetaViewController.swift */,
 				1B4563C21C17629700046073 /* Main.storyboard */,
 				1B4563C51C17629700046073 /* Assets.xcassets */,
 				1B4563C71C17629700046073 /* LaunchScreen.storyboard */,
 				1B4563CA1C17629700046073 /* Info.plist */,
 			);
 			path = Planeta;
+			sourceTree = "<group>";
+		};
+		1B4563D01C17799D00046073 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B4563D21C1779B700046073 /* Planeta.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1B4563D11C1779A400046073 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		1B4563D41C177A1400046073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4563C11C17629700046073 /* ViewController.swift in Sources */,
+				1B4563D61C177A3100046073 /* PlanetaTableViewCell.swift in Sources */,
 				1B4563BF1C17629700046073 /* AppDelegate.swift in Sources */,
+				1B4563D31C1779B700046073 /* Planeta.swift in Sources */,
+				1B4563D81C1784E000046073 /* AddPlanetaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
