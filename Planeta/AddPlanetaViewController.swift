@@ -12,6 +12,7 @@ class AddPlanetaViewController: UIViewController {
     
     var list:ViewController!
     var pos:Int?
+    var planetaDao:PlanetaDao!
     
     @IBOutlet var nombre:UITextField!
     @IBOutlet var gravedad:UITextField!
@@ -24,6 +25,7 @@ class AddPlanetaViewController: UIViewController {
             nombre.text = list.data[pos!].nombre
             gravedad.text = "\(list.data[pos!].gravedad)"
         }
+        planetaDao = PlanetaDao()
         
     }
 
@@ -37,12 +39,16 @@ class AddPlanetaViewController: UIViewController {
         if(pos != nil){
             list.data[pos!].gravedad = Double(gravedad.text!)!
             list.data[pos!].nombre = nombre.text!
+            
+            planetaDao.update(list.data[pos!])
+            
         }else{
             let p:Planeta = Planeta()
             p.nombre = nombre.text!
             p.gravedad = Double(gravedad.text!)!
             
             list.data.append(p)
+            planetaDao.insert(p)
         }
         
         self.navigationController?.popToViewController(list, animated: true)

@@ -11,15 +11,17 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     var data:[Planeta] = [Planeta]()
+    var planetaDao:PlanetaDao!
     @IBOutlet var table:UITableView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        planetaDao = PlanetaDao()
         
-        data = [Planeta]()
+        data = planetaDao.getAll()
         
-        var p:Planeta = Planeta()
+        /*var p:Planeta = Planeta()
         p.nombre = "test1"
         p.gravedad = 3.5
         data.append(p)
@@ -27,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         p = Planeta()
         p.nombre = "test2"
         p.gravedad = 9.8
-        data.append(p)
+        data.append(p)*/
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -92,8 +94,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         let alert:UIAlertController = UIAlertController(title: "Eliminar Planeta", message: "Desea eliminar el planeta \(p.nombre)", preferredStyle: UIAlertControllerStyle.Alert)
         
         let actionOk:UIAlertAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
+            
+        self.planetaDao.delete(self.data[(self.table.indexPathForSelectedRow?.row)!])
             self.data.removeAtIndex((self.table.indexPathForSelectedRow?.row)!)
             self.table.reloadData()
+            
         }
         
         let actionCancel:UIAlertAction = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Default, handler: nil)

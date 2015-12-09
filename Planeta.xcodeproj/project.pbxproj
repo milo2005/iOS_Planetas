@@ -15,7 +15,69 @@
 		1B4563D31C1779B700046073 /* Planeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D21C1779B700046073 /* Planeta.swift */; };
 		1B4563D61C177A3100046073 /* PlanetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */; };
 		1B4563D81C1784E000046073 /* AddPlanetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563D71C1784E000046073 /* AddPlanetaViewController.swift */; };
+		1B4563F71C17A20E00046073 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4563F61C17A20E00046073 /* libsqlite3.tbd */; };
+		1B4563F81C17A21300046073 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4563E61C17A1C500046073 /* SQLite.framework */; };
+		1B4563FA1C17A24700046073 /* PlanetaDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4563F91C17A24700046073 /* PlanetaDao.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B4563E51C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29E21B26F718001C60EA;
+			remoteInfo = "SQLite iOS";
+		};
+		1B4563E71C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29EC1B26F718001C60EA;
+			remoteInfo = "SQLite iOS Tests";
+		};
+		1B4563E91C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253AC1B52ADEB009B38B1;
+			remoteInfo = "SQLite Mac";
+		};
+		1B4563EB1C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253B51B52ADEC009B38B1;
+			remoteInfo = "SQLite Mac Tests";
+		};
+		1B4563ED1C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB7A1B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS";
+		};
+		1B4563EF1C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB831B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS Tests";
+		};
+		1B4563F11C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB01B7438610040D364;
+			remoteInfo = "SQLiteCipher Mac";
+		};
+		1B4563F31C17A1C500046073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB91B7438620040D364;
+			remoteInfo = "SQLiteCipher Mac Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B4563BB1C17629700046073 /* Planeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +90,10 @@
 		1B4563D21C1779B700046073 /* Planeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planeta.swift; sourceTree = "<group>"; };
 		1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetaTableViewCell.swift; sourceTree = "<group>"; };
 		1B4563D71C1784E000046073 /* AddPlanetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlanetaViewController.swift; sourceTree = "<group>"; };
+		1B4563D91C17A1C500046073 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		1B4563F51C17A1FC00046073 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1B4563F61C17A20E00046073 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1B4563F91C17A24700046073 /* PlanetaDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetaDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4563F81C17A21300046073 /* SQLite.framework in Frameworks */,
+				1B4563F71C17A20E00046073 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +112,10 @@
 		1B4563B21C17629700046073 = {
 			isa = PBXGroup;
 			children = (
+				1B4563F61C17A20E00046073 /* libsqlite3.tbd */,
 				1B4563BD1C17629700046073 /* Planeta */,
 				1B4563BC1C17629700046073 /* Products */,
+				1B4563D91C17A1C500046073 /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +140,7 @@
 				1B4563C51C17629700046073 /* Assets.xcassets */,
 				1B4563C71C17629700046073 /* LaunchScreen.storyboard */,
 				1B4563CA1C17629700046073 /* Info.plist */,
+				1B4563F51C17A1FC00046073 /* Bridging-Header.h */,
 			);
 			path = Planeta;
 			sourceTree = "<group>";
@@ -85,6 +156,7 @@
 		1B4563D11C1779A400046073 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				1B4563F91C17A24700046073 /* PlanetaDao.swift */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -95,6 +167,21 @@
 				1B4563D51C177A3100046073 /* PlanetaTableViewCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		1B4563DA1C17A1C500046073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B4563E61C17A1C500046073 /* SQLite.framework */,
+				1B4563E81C17A1C500046073 /* SQLite iOS Tests.xctest */,
+				1B4563EA1C17A1C500046073 /* SQLite.framework */,
+				1B4563EC1C17A1C500046073 /* SQLite Mac Tests.xctest */,
+				1B4563EE1C17A1C500046073 /* SQLiteCipher.framework */,
+				1B4563F01C17A1C500046073 /* SQLiteCipher iOS Tests.xctest */,
+				1B4563F21C17A1C500046073 /* SQLiteCipher.framework */,
+				1B4563F41C17A1C500046073 /* SQLiteCipher Mac Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,12 +230,77 @@
 			mainGroup = 1B4563B21C17629700046073;
 			productRefGroup = 1B4563BC1C17629700046073 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1B4563DA1C17A1C500046073 /* Products */;
+					ProjectRef = 1B4563D91C17A1C500046073 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1B4563BA1C17629700046073 /* Planeta */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1B4563E61C17A1C500046073 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 1B4563E51C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563E81C17A1C500046073 /* SQLite iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite iOS Tests.xctest";
+			remoteRef = 1B4563E71C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563EA1C17A1C500046073 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 1B4563E91C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563EC1C17A1C500046073 /* SQLite Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Mac Tests.xctest";
+			remoteRef = 1B4563EB1C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563EE1C17A1C500046073 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 1B4563ED1C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563F01C17A1C500046073 /* SQLiteCipher iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher iOS Tests.xctest";
+			remoteRef = 1B4563EF1C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563F21C17A1C500046073 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 1B4563F11C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B4563F41C17A1C500046073 /* SQLiteCipher Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher Mac Tests.xctest";
+			remoteRef = 1B4563F31C17A1C500046073 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1B4563B91C17629700046073 /* Resources */ = {
@@ -170,6 +322,7 @@
 			files = (
 				1B4563C11C17629700046073 /* ViewController.swift in Sources */,
 				1B4563D61C177A3100046073 /* PlanetaTableViewCell.swift in Sources */,
+				1B4563FA1C17A24700046073 /* PlanetaDao.swift in Sources */,
 				1B4563BF1C17629700046073 /* AppDelegate.swift in Sources */,
 				1B4563D31C1779B700046073 /* Planeta.swift in Sources */,
 				1B4563D81C1784E000046073 /* AddPlanetaViewController.swift in Sources */,
